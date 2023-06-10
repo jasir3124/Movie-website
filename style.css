@@ -3,14 +3,20 @@
     -webkit-box-shadow: 200px 0px 115px 15px rgba(0,0,0,0.87) inset;
     -moz-box-shadow: 200px 0px 115px 15px rgba(0,0,0,0.87) inset;
 } */
-body{
-    background-color: rgb(20, 20, 20);
+body {
+  background-color: rgb(20, 20, 20);
 }
-.navbar{
-    float:left;
-    width: fit-content;
-    border-right: 1px rgb(53, 51, 51) solid;
+.navbar {
+  float: left;
+  width: fit-content;
+  border-right: 1px rgb(53, 51, 51) solid;
 }
-.iconSize{
-    font-size: 22px;
+.iconSize {
+  font-size: 22px;
+}
+.carousel {
+  position: relative;
+  width: 900px;
+  float: right;
+  margin: 50px 100px 0 0;
 }
