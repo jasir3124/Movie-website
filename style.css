@@ -1,8 +1,4 @@
-/* :root{
-    --shaded-Transition:box-shadow: 200px 0px 115px 15px rgba(0,0,0,0.87) inset;
-    -webkit-box-shadow: 200px 0px 115px 15px rgba(0,0,0,0.87) inset;
-    -moz-box-shadow: 200px 0px 115px 15px rgba(0,0,0,0.87) inset;
-} */
+
 body {
   background-color: rgb(20, 20, 20);
 }
@@ -16,7 +12,13 @@ body {
 }
 .carousel {
   position: relative;
-  width: 900px;
-  float: right;
-  margin: 50px 100px 0 0;
+  width: 1000px;
+}
+.cardLink{
+  text-decoration: none;
+}
+.cardImg{
+  mix-blend-mode: color;
+  right: 51px;
+  top: 7px;
 }
