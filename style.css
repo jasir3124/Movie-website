@@ -1,4 +1,43 @@
-
+:root,
+[data-bs-theme="light"] {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-code-color: #d63384;
+  --bs-highlight-bg: #fff3cd;
+  --bs-focus-ring-color: rgba(13, 110, 253, 0.25);
+  --bs-form-valid-color: #198754;
+  --bs-form-valid-border-color: #198754;
+  --bs-form-invalid-color: #dc3545;
+}
 body {
   background-color: rgb(20, 20, 20);
 }
@@ -14,13 +53,36 @@ body {
   position: relative;
   width: 1000px;
 }
-.cardLink{
+.cardLink {
   text-decoration: none;
 }
-.cardImg{
+.cardImg {
   right: 11px;
   top: 7px;
 }
-.harryPotterCard{
-  padding: 12px;
+.card-body {
+  padding: 12px !important;
+}
+.moviesButton,
+.SeriesButton {
+  margin: 10px;
+  font-size: 15px;
+  padding: 10px;
+  background-color: #000;
+  border: 3px solid var(--bs-danger);
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -3px 5px 0px 0px var(--bs-danger);
+}
+.moviesButton:hover,
+.SeriesButton:hover {
+  transform: translate(5px, -5px);
+}
+.movies {
+  display: block;
+}
+.series{
+  display: none;
 }
