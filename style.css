@@ -67,6 +67,30 @@ body {
 .moviesButton,
 .SeriesButton {
   margin: 10px;
+  font-size: 13px;
+  padding: 10px;
+  background-color: #000;
+  border: 3px solid var(--bs-warning);
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -3px 3px 0px 0px var(--bs-warning);
+}
+.moviesButton:hover,
+.SeriesButton:hover {
+  transform: translate(5px, -5px);
+}
+.movies {
+  display: block;
+}
+.series {
+  display: none;
+}
+.netflixButton,
+.huluButton,
+.HBOButton{
+  margin: 10px;
   font-size: 15px;
   padding: 10px;
   background-color: #000;
@@ -77,13 +101,14 @@ body {
   transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
   box-shadow: -3px 5px 0px 0px var(--bs-danger);
 }
-.moviesButton:hover,
-.SeriesButton:hover {
+.netflixButton:hover,
+.huluButton:hover,
+.HBOButton:hover{
   transform: translate(5px, -5px);
 }
-.movies {
+.Netflix{
   display: block;
 }
-.series{
+.Hulu{
   display: none;
 }
