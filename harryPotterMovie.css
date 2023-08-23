@@ -50,12 +50,3 @@ body {
 .iconSize {
   font-size: 22px;
 }
-.spiderManMovies{
-    display: block;
-}
-.spiderManSeries{
-    display: none;
-}
-.title{
-    font-size: 45px;
-}
