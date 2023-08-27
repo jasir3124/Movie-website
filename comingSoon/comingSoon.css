@@ -73,3 +73,6 @@ body {
 .SeriesButton:hover {
   transform: translate(5px, -5px);
 }
+.seriesComingSoon{
+  display: none;
+}
