@@ -115,3 +115,6 @@ body {
 .HBO{
   display: none;
 }
+.saveIconActive{
+  color: red !important;
+}

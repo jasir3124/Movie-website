@@ -97,3 +97,22 @@ HBOBtn.addEventListener("click", function () {
   huluCont.style.display = "none";
   netflixCont.style.display = "none";
 });
+
+let imagesArray = [];
+let saveIcons = document.querySelectorAll(".saveIcon");
+
+
+saveIcons.forEach(function (saveIcon) {
+  saveIcon.addEventListener("click", function () {
+    saveIcon.classList.toggle("saveIconActive");
+    let image =
+      saveIcon.previousElementSibling.firstElementChild.getAttribute("src");
+    let imageIndex = imagesArray.indexOf(image);
+    if (saveIcon.classList.contains("saveIconActive")) {
+      imagesArray.push(image);
+      console.log(imagesArray);
+    } else {
+      imagesArray.splice(imageIndex, 1);
+    }
+  });
+});
