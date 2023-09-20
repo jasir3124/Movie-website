@@ -59,3 +59,10 @@ body {
 .title{
     font-size: 45px;
 }
+.saveIcon{
+  margin-left: 110px ;
+  cursor: pointer;
+}
+.saveIconActive{
+  color: red !important;
+}

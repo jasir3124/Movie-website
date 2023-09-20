@@ -67,3 +67,6 @@ main{
 .saveIconActive{
   color: red !important;
 }
+.saveIcon{
+  margin-bottom: 20px;
+}

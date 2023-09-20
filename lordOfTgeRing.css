@@ -50,3 +50,10 @@ body {
 .iconSize {
   font-size: 22px;
 }
+.saveIcon{
+  margin-left: 110px ;
+  cursor: pointer;
+}
+.saveIconActive{
+  color: red !important;
+}

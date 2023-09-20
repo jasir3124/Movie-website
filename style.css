@@ -115,6 +115,11 @@ body {
 .HBO{
   display: none;
 }
+.saveIcon{
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+}
 .saveIconActive{
   color: red !important;
 }
