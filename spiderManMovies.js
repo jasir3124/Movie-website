@@ -8,6 +8,10 @@ saveIcons.forEach(function (saveIcon) {
     let image =
       saveIcon.previousElementSibling.firstElementChild.getAttribute("src");
 
+      let iconText = saveIcon.lastElementChild
+
+      console.log(iconText);
+
     let imageIndex = moviesArray.indexOf(image);
 
     let className = "saveIconActive";
@@ -16,10 +20,12 @@ saveIcons.forEach(function (saveIcon) {
       moviesArray.push(image);
       localStorage.setItem("savedMovies", JSON.stringify(moviesArray));
       console.log(moviesArray)
+      iconText.innerHTML = 'Unsave'
     } else {
       moviesArray.splice(imageIndex, 1);
       localStorage.setItem("savedMovies", JSON.stringify(moviesArray));
       console.log(moviesArray)
+      iconText.innerHTML = 'Save'
     }
   });
 });
@@ -40,10 +46,12 @@ window.addEventListener("load", function () {
   saveIcons.forEach(function (icon) {
     let image =
       icon.previousElementSibling.firstElementChild.getAttribute("src");
+      let iconText = icon.lastElementChild
     for (let i = 0; i < moviesArray.length; i++) {
       let movieName = moviesArray[i];
       if (image === movieName) {
         icon.classList.add("saveIconActive");
+        iconText.innerHTML = 'Unsave'
       }
     }
   });
