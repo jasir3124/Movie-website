@@ -110,16 +110,16 @@ saveIcons.forEach(function (saveIcon) {
 
     let imageIndex = moviesArray.indexOf(image);
 
-    console.log(moviesArray)
-
     let className = "saveIconActive";
 
     if (checkIfContains(saveIcon, className)) {
       moviesArray.push(image);
       localStorage.setItem("savedMovies", JSON.stringify(moviesArray));
+      console.log(moviesArray)
     } else {
       moviesArray.splice(imageIndex, 1);
       localStorage.setItem("savedMovies", JSON.stringify(moviesArray));
+      console.log(moviesArray)
     }
   });
 });
