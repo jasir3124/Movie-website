@@ -50,3 +50,20 @@ body {
 .iconSize {
   font-size: 22px;
 }
+main{
+  width: 100%;
+}
+.moviesCont{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.movieImg{
+  width: 186px;
+  height: 275px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.saveIconActive{
+  color: red !important;
+}
